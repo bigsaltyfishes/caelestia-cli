@@ -188,7 +188,7 @@ def apply_gtk(colours: dict[str, str], mode: str) -> None:
 
     subprocess.run(["dconf", "write", "/org/gnome/desktop/interface/gtk-theme", "'adw-gtk3-dark'"])
     subprocess.run(["dconf", "write", "/org/gnome/desktop/interface/color-scheme", f"'prefer-{mode}'"])
-    subprocess.run(["dconf", "write", "/org/gnome/desktop/interface/icon-theme", f"'Papirus-{mode.capitalize()}'"])
+    subprocess.run(["dconf", "write", "/org/gnome/desktop/interface/icon-theme", f"'Adwaita'"])
 
 
 @log_exception
